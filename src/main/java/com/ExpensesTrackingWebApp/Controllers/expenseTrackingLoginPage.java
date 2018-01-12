@@ -7,7 +7,7 @@ package com.ExpensesTrackingWebApp.Controllers;
 
 	@Controller
 	public class expenseTrackingLoginPage extends HttpServlet {
-		@RequestMapping("/CouponTraking-0.0.1-SNAPSHOT/welcome")
+		@RequestMapping("/welcome")
 		public ModelAndView precouponTrackingLoginPage(){
 			ModelAndView modelAndView = new ModelAndView("expenseTrackingLoginPage"); 
 			System.out.println("1dsd");
@@ -15,7 +15,7 @@ package com.ExpensesTrackingWebApp.Controllers;
 					
 		}
 		
-		@RequestMapping("/CouponTraking-0.0.1-SNAPSHOT/loginUser")
+		@RequestMapping("/loginUser")
 		public ModelAndView postexpenseTrackingLoginPage(){
 			System.out.println("dsd");
 			ModelAndView modelAndView = new ModelAndView("expenseTrackingHomePage"); 
