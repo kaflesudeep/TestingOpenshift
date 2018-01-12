@@ -9,19 +9,16 @@ xsi:schemaLocation="
     http://www.springframework.org/schema/context/spring-context-3.0.xsd
     http://www.springframework.org/schema/mvc
     http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
-<!-- <context:component-scan base-package="com.mkyong.common.controller" /> -->
+
 
 <mvc:annotation-driven /> 
- 	
- <context:component-scan base-package="CouponTraking/src/main/resources/Controllers."></context:component-scan>
-<!--  <context:component-scan base-package="com.tripapplication.RegisterController."></context:component-scan>  -->
-<!--   <context:component-scan base-package="com.tripapplication.ForgotCredential."></context:component-scan> -->
-<!--  <context:component-scan base-package="com.tripapplication.TripInfoFirstController."></context:component-scan> -->
-<!--  <context:component-scan base-package="com.tripapplication.TripInfoSecondController."></context:component-scan> -->
+ 
+ <context:component-scan base-package="com.ExpensesTrackingWebApp.Controllers"></context:component-scan>
+
  
 <!--  Note: directly opens the "page_layout.jsp" file without writing the /welcome -->
- <mvc:view-controller path="/" view-name="couponTrackingLoginPage"/>
 
+<mvc:view-controller path="/" view-name="expenseTrackingLoginPage"/>
 
  <bean id="viewResolver"
     	class="org.springframework.web.servlet.view.InternalResourceViewResolver" >
@@ -40,6 +37,6 @@ xsi:schemaLocation="
  <mvc:annotation-driven />
     
 
-  
+ 
 
 </beans>
